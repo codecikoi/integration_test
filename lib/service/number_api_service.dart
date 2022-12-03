@@ -11,7 +11,7 @@ class NumberApiService {
 
   Future<Number> getNumberFact(int number) async {
     final response = await client.get(
-      Uri.parse('http://numbersapi.com$number'),
+      Uri.parse('http://numbersapi.com/$number'),
       headers: {'Content-Type': 'application/json'},
     );
 
